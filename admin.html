@@ -16,7 +16,7 @@
     <input id="newUser" placeholder="username">
     <input id="newPass" placeholder="password" type="password">
     <select id="newRole"><option value="user">user</option><option value="admin">admin</option></select>
-    <button id="createUserBtn">Create</button>
+    <button type="button" id="createUserBtn" class="btn">Create</button>
   </section>
 
   <section>
@@ -25,14 +25,14 @@
     <input id="svName" placeholder="name">
     <input id="svHost" placeholder="host">
     <textarea id="svCommands" placeholder='commands JSON, e.g. {"start": {"file":"/usr/bin/sudo","args":["/bin/systemctl","start","docker@server1"]}}'></textarea>
-    <button id="addServerBtn">Add Server</button>
+    <button type="button" id="addServerBtn" class="btn">Add Server</button>
   </section>
 
   <section>
     <h3>Assign Server to User</h3>
     <input id="assignId" placeholder="server id">
     <input id="assignUser" placeholder="username">
-    <button id="assignBtn">Assign</button>
+    <button type="button" id="assignBtn" class="btn">Assign</button>
   </section>
 
   <section>
