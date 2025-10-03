@@ -28,7 +28,7 @@ async function load(){
   list.forEach(s=>{
     const el = document.createElement('div');
     el.className = 'server-card';
-    el.innerHTML = '<h3>'+s.name+'</h3><p>'+s.id+' - '+s.host+'</p><div><button class="btn" onclick="action(\''+s.id+'\',\'status\')">Status</button> <button class="btn" onclick="action(\''+s.id+'\',\'start\')">Start</button> <button class="btn" onclick="action(\''+s.id+'\',\'stop\')">Stop</button></div><pre id="out-'+s.id+'"></pre>';
+    el.innerHTML = '<h3>'+s.name+'</h3><p>'+s.id+' - '+s.host+'</p><div><button type="button" class="btn" onclick="action(\\''+s.id+'\\',\\'status\\')">Status</button> <button type="button" class="btn" onclick="action(\\''+s.id+'\\',\\'start\\')">Start</button> <button type="button" class="btn" onclick="action(\\''+s.id+'\\',\\'stop\\')">Stop</button></div><pre id="out-'+s.id+'"></pre>';
     cont.appendChild(el);
   });
 }
